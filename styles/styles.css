@@ -151,13 +151,13 @@ header nav ul{
 
 
 /* --Productos index-- */
-.product-index{
+.product{
     justify-content: center;
     align-items: center;
     gap: 5rem;
     padding: 1rem;
 }
-.product-index h2{
+.product h2{
     text-align: center;
     padding: 1rem;
     font-size: 1.75rem;
