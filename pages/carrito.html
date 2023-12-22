@@ -12,7 +12,7 @@
     <title>Carrito</title>
 </head>
 <body>
-    <header class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="navbar navbar-expand-lg bg-body-tertiary navbar-carrito">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,10 +30,10 @@
         </nav>
         </div>
     </header>
-<hr>
+    
     <main>
-        <div>
-            <nav class="menu-carrito">
+        <div class="menu-carrito">
+            <nav >
                 <ul>
                     <li class="menu__barra menu__destacado"><a href="./carrito.html">1. Mi carrito</a></li>
                 </ul>
@@ -49,19 +49,66 @@
         <div class="galeria-carrito">
             <h2 class="title cart">Mi carrito</h2>
             <div class="galeria-carrito__info">
-                <section class="galeria__img photo">
+                <section class="galeria-carrito__img1 photo">
                     <img src="../img/conjuntorosa.png" alt="">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia rem quasi facere a quaerat ad eaque. Quaerat quam deleniti laudantium consequuntur adipisci qui cum reiciendis nemo, maiores quod dignissimos quia!</p>
+                    <h3 class="title-carrito">Nombre Producto</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="galeria-carrito__precio-cant">
+                        <h6>$800</h6>
+                        <input class="input" type="text" placeholder="Cantidad" name="Cantidad" id="">
+                    </div>
                 </section>
-                <section class="galeria__img2 photo">
+                
+                <section class="galeria-carrito__img2 photo">
                     <img src="../img/conjuntorosa.png" alt="">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia rem quasi facere a quaerat ad eaque. Quaerat quam deleniti laudantium consequuntur adipisci qui cum reiciendis nemo, maiores quod dignissimos quia!</p>
+                    <h3>Nombre Producto</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="galeria-carrito__precio-cant">
+                        <h6>$800</h6>
+                        <input class="input" type="text" placeholder="Cantidad" name="Cantidad" id="">
+                    </div>
                 </section>
             </div>
+            <section class="galeria-carrito__resumen-compra">
+                <div>
+                    <h2>Resumen de compra</h2>
+                    <hr>
+                    <div class="resumen-compra__cup">
+                        <h5>Cupon de descuento: </h5>
+                        <input class="input" type="text" placeholder="Codigo">
+                    </div>
+                    <hr>
+                    <div class="resumen-compra__sub">
+                        <p>Subtotal </p>
+                        <p>$1000</p>
+                    </div>
+                    <div class="resumen-compra__serv">
+                        <p>Servicio</p>
+                        <p>$100</p>
+                    </div>
+                    <div class="resumen-compra__env">
+                        <p>Envio</p>
+                        <p>$100</p>
+                    </div>
+                    <hr>
+                    <div class="resumen-compra__total">
+                        <h3>Total</h3>
+                        <p>$1200</p>
+                    </div>
+                </div>
+            </section>
         </div>
+        <section class="btn-next">
+            <div class="btn-sig">
+                <a class="button" href="./detallecompra.html">Siguiente</a>
+            </div>
+            <div class="button button-cancelar">
+                <a href="../index.html">Cancelar</a>
+            </div>
+        </section>
 
-        <!-- <section class="product container">
-            <h2 class="title cart">Productos</h2>
+        <section class="product container">
+            <h2 class="title cart">Productos que podrian interesarte </h2>
             <div class="product__carrusel">
                 <article class="product__card">
                     <img src="../img/topnegro.png" alt="">
@@ -116,7 +163,7 @@
                         <a class="button" href="">Comprar</a>
                     </div>
                 </article>
-        </section> -->
+        </section>
 
     </main>
     

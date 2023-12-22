@@ -54,29 +54,14 @@ a{
 .navbar-nav .nav-link {
     border: none; 
 }
-
-
-
-/* header{
-    max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
+    /* --- header carrito --- */
+.navbar-carrito{
+    position: relative;
+    z-index: 2;
 }
-
-header nav ul{
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-
-    /* posicionar por encima de la foto */
-   /* z-index: 2;
-    position: absolute;
-    align-items: center;
-} */
-
+.navbar-carrito, .container-fluid{
+    background-color: transparent !important;
+}
 
 
 /* ---Footer--- */
@@ -84,14 +69,15 @@ header nav ul{
     background-color:  rgba(171, 131, 208, 0.363);
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
     color: black;
     padding: 2rem;
     text-align: center;
 }
 .footer__title{
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 
 .footer__menu{
@@ -350,17 +336,17 @@ header nav ul{
     z-index: 1;
 }
 
-
 /* ---------- --------- --------- */
+
+
 /* ---------- --------- --------- */
 /* --- Carrito --- */
 .menu-carrito{
     display: flex;
     justify-content: space-between;
     background-color: rgba(171, 131, 208, 0.153);
-    padding: 4rem;
-    margin-top: 5.5rem;
-    gap: 3rem;
+    padding: 2rem;
+    gap: 2rem;
 }
 .menu__barra{
     font-size: 1.50rem;
@@ -373,27 +359,58 @@ header nav ul{
     text-align: start;
 }
 .galeria-carrito__info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-
-    grid-template-areas: 
-    "img1 text1"
-    "img2 text2"
-    ;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    text-align: center;
 }
-/* .galeria-2__info{
+.galeria-carrito__precio-cant{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    padding: 0.5rem;
+    align-items: center;
+}
+.input{
+    border: none;
+}
+.title-carrito{
+    margin-top: 1rem;
+}
 
-} */
-/* .galeria-2__info p{
-    display: flex;
-    text-align: end;
-} */
+    /* Resumen Compra */
+    .galeria-carrito__resumen-compra{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 1rem;
+    }
 
+    .resumen-compra__sub,
+    .resumen-compra__serv,
+    .resumen-compra__env,
+    .resumen-compra__total,
+    .resumen-compra__cup{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    .btn-next{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        padding: 1rem;
+    }
+    .btn-sig{
+        margin-right: 1rem;
+    }
+    .button-cancelar{
+        padding: 5px 5px;
+        background-color: rgb(198, 194, 194);
+    }
 
 /* ---------- --------- --------- */
 
