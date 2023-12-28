@@ -63,7 +63,10 @@ a{
     background-color: transparent !important;
 }
 
+/* ---------- --------- --------- */
 
+
+/* ---------- --------- --------- */
 /* ---Footer--- */
 .footer {
     background-color:  rgba(171, 131, 208, 0.363);
@@ -136,10 +139,11 @@ a{
     justify-content: start;
     align-items: start;
 } */
+/* ---------- --------- --------- */
 
 
 
-
+/* ---------- --------- --------- */
 /* ----MAIN INDEX---- */
 .portada{
     background-image: url(../img/portada2.jpg);
@@ -335,7 +339,6 @@ a{
     align-items: center;
     z-index: 1;
 }
-
 /* ---------- --------- --------- */
 
 
@@ -358,19 +361,34 @@ a{
 .title, .cart{
     text-align: start;
 }
+.galeria-carrito__product{
+    border: 3px solid white;
+    padding: 1rem;
+
+}
+
 .galeria-carrito__info{
     display: flex;
     flex-direction: column;
     padding: 0.5rem;
     text-align: center;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.galeria-carrito__nom-precio-cant{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    align-items: center;
 }
 .galeria-carrito__precio-cant{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 0.5rem;
-    align-items: center;
+    justify-content: center;
+    gap: 10rem;
 }
+
 .input{
     border: none;
 }
@@ -513,6 +531,32 @@ a{
         justify-content: center;
         align-items: center;
     }
+
+
+    /* ---------- --------- --------- */
+    /* --- Carrito --- */
+    .galeria-carrito__product{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .galeria-carrito__img{
+        display: flex;
+        flex-direction: column;
+    }
+    .galeria-carrito__nom-precio-cant{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .title-carrito{
+        margin-top: 0px;
+    }
+    .galeria-carrito{
+        max-width: 900px; 
+    }
+
+
 
 }
 
