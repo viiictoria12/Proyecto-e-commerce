@@ -449,7 +449,7 @@ a{
 .detallecompra{
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.7rem;
     padding: 2rem;
     padding-top: 0px;
 }
@@ -464,8 +464,9 @@ a{
 }
 .detallecompra__dire{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    width: 50vh;
+    gap: 0.2rem;
 }
 .detallecompra__phone input{
     width: 50vh;
@@ -603,7 +604,11 @@ a{
         max-width: 900px;
     }
 
-
+    .detallecompra__dire{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
     .detallecompra{
         max-width: 900px;
     }
