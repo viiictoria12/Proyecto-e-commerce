@@ -440,6 +440,50 @@ a{
 
 /* ---------- --------- --------- */
 
+/* ---------- --------- --------- */
+/* ----- detalle de compra ---- */
+.compra__title{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.detallecompra{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2rem;
+    padding-top: 0px;
+}
+.detallecompra__nom-ape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.detallecompra__nom-ape input{
+    width: 100%;
+}
+.detallecompra__dire{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.detallecompra__phone input{
+    width: 50vh;
+}
+.detallecompra__envio{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.check{
+    padding: 1rem;
+    width: 50%;
+    background-color: rgba(220, 220, 220, 0.621);
+}
+.check:hover{
+    background-color: white;
+}
+
 
 /* ---------- --------- --------- */
 
