@@ -1,0 +1,32 @@
+/* ----HEADER INDEX---- */
+.navbar{
+    z-index: 2;
+    position: absolute;
+    padding: 0px;
+    background-color: transparent !important; 
+    border: none; 
+
+    .nav-link{
+        margin: 0.3rem;
+        color: black;
+    } 
+
+    .container-fluid{
+        background-color: rgba(171, 131, 208, 0.192);
+        gap: 1rem;
+        padding: 1rem;
+
+        .navbar-toggler{
+            background-color:transparent !important;
+            border: none;
+        }
+    }
+    .navbar-nav{
+        .nav-link{
+            border: none; 
+        }
+    }
+}
+
+
+
