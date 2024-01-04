@@ -1,0 +1,8 @@
+/* --- header carrito --- */
+.navbar-carrito{
+    position: relative;
+    z-index: 2;
+    .container-fluid{
+        background-color: transparent !important;
+    }
+}
