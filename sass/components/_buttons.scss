@@ -31,10 +31,6 @@ $color-button-galeria2:#fbbfed87;
         }
     }
 
-    &-modelosdestacados{
-        padding: 15px 20px;
-    }
-
 
     /* botones de galeria-2 */
     &-destacado{
@@ -61,5 +57,19 @@ $color-button-galeria2:#fbbfed87;
     }
 }
 
+.btn-next{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
 
+    &__sig{
+        margin-right: 1rem;
+    }
+    &__cancelar{
+        padding: 5px 5px;
+        background-color: rgb(198, 194, 194);
+    }
+}
 

@@ -1,8 +1,93 @@
-/* --- header carrito --- */
-.navbar-carrito{
-    position: relative;
-    z-index: 2;
-    .container-fluid{
-        background-color: transparent !important;
+
+/* --- Carrito --- */
+.galeria-carrito{
+    &__product{
+        border: 3px solid white;
+        padding: 1rem;
+
     }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        text-align: center;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    &__nom-precio-cant{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        align-items: center;
+    }
+    &__precio-cant{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10rem;
+    }
+    &__title{
+        margin-top: 1rem;
+
+    }
+
+    /* Resumen Compra */
+    &__resumen-compra{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        padding: 1rem;
+    }
+    &__resumen-compra{
+        &__cup,
+        &__total,
+        &__env,
+        &__serv,
+        &__sub{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+    &__input{
+        border: none;
+    }
+
+}
+
+
+@media screen and (min-width:760px){
+
+    /* --- Carrito --- */
+    .galeria-carrito{
+
+        max-width: 900px; 
+
+        &__product{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        &__img{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__nom-precio-cant{
+        display: flex;
+        flex-direction: column;
+        }  
+        
+        &__resumen-compra{
+            max-width: 900px;
+        }
+    }
+    
+    .title-carrito{
+        margin-top: 0px;
+    }
+
 }

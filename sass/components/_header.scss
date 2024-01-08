@@ -30,3 +30,21 @@
 
 
 
+/* --- header carrito --- */
+.navbar-carrito{
+    position: relative;
+    z-index: 2;
+    .container-fluid{
+        background-color: transparent !important;
+    }
+}
+
+@media screen and (min-width:760px){
+    /* --- HEADER --- */
+    .container-fluid{
+        background-color: transparent !important;
+        padding: 1.5rem;
+    }
+
+    
+}

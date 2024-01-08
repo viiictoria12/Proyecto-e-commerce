@@ -1,0 +1,24 @@
+$color-menu:rgba(171, 131, 208, 0.153);
+$color-underline:rgb(167, 163, 163);
+
+.menu-carrito{
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-menu;
+    padding: 2rem;
+    gap: 2rem;
+
+    .menu__barra{
+        font-size: 1.50rem;
+    }
+
+    .menu__destacado{
+        text-decoration: underline;
+        color: $color-underline;
+    }
+    .title{
+        .cart{
+            text-align: start;
+        }
+    }
+}

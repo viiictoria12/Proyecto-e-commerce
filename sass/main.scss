@@ -2,8 +2,23 @@
 
 //header
 @import "./components/header";
-//header carrito
+
+
+//components
+@import "./components/buttons";
+@import "./components/card";
+@import "./components/galeria-flex";
+@import "./components/galeria-grid";
+@import "./components/menu-compra";
+
+
+//pages
+@import "./pages/index";
 @import "./pages/carrito";
+@import "./pages/categorias";
+@import "./pages/pago";
+@import "./pages/detallecompra";
+
 
 //footer
 @import "./components/footer";

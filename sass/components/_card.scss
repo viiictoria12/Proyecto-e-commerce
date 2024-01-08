@@ -1,0 +1,52 @@
+$color-card:rgba(171, 131, 208, 0.363);
+
+/* --Productos index-- */
+.product{
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    padding: 1rem;
+
+    &__card{
+        border: 5px;
+        border-color: $color-card;
+        width: 150px;
+        background-color:  $color-card;
+    
+        flex-basis: 200px;   /*valor base */
+        flex-shrink: 0;      /*para que no se achique*/
+    }
+
+    &__info{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__title{
+        text-align: center;
+    }
+
+    &__carrusel{
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+        align-items: center;
+        gap: 20px;
+        overflow: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+}
+
+@media screen and (min-width:760px){
+    
+    /* ---Productos carrusel --- */
+    .product{
+        &__card{
+            flex-basis: 250px;   /*valor base */
+        }
+    }
+}

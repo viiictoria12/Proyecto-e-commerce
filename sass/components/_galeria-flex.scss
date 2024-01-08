@@ -1,0 +1,36 @@
+
+/* ---galeria1 con flex--- */
+.galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    
+    &__img{
+        width: 270px;
+        padding: 1rem;
+
+        img{
+            width: 400px;
+            height: 350px;
+        }
+    }
+    h2{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    
+    } 
+}
+
+@media screen and (min-width:760px){
+    /* ---Galeria--- */
+    .galeria{
+        &__img{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+}

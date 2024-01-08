@@ -1,0 +1,65 @@
+$width-input:50vh;
+
+
+.compra__title{
+    padding: 1rem;
+    padding-left: 2rem;
+}
+.detallecompra{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 2rem;
+    padding-top: 0px;
+
+    &__nom-ape{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+
+        input{
+            width: 100%;
+        }
+    }
+    &__dire{
+        display: flex;
+        flex-direction: column;
+        width: $width-input;
+        gap: 0.2rem;
+    }
+
+    &__envio{
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        &-check{
+            padding: 1rem;
+            width: 50%;
+            background-color: rgba(220, 220, 220, 0.621);
+            &:hover{
+                background-color: white;
+            }
+        }
+    }
+
+    &__phone{
+        input{
+            width: $width-input;
+        }
+    }
+
+}
+
+@media screen and (min-width:760px){
+    .detallecompra{
+        max-width: 900px;
+
+        &__dire{
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+}
