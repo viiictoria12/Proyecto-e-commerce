@@ -71,7 +71,7 @@ a {
 
 @media screen and (min-width: 760px) {
   /* --- HEADER --- */
-  .container-fluid {
+  .navbar-carrito .container-fluid {
     background-color: transparent !important;
     padding: 1.5rem;
   }
@@ -388,6 +388,10 @@ a {
 }
 .galeria-carrito__input {
   border: none;
+}
+
+.title-cart {
+  text-align: start;
 }
 
 @media screen and (min-width: 760px) {
