@@ -46,6 +46,10 @@ $color-button-galeria2:#fbbfed87;
         }
         
     }
+
+    &-comprar{
+        padding: 15px 15px;
+    }
 }
 
 .galeria__button{
@@ -69,7 +73,6 @@ $color-button-galeria2:#fbbfed87;
     }
     &__cancelar{
         padding: 5px 5px;
-        background-color: rgb(198, 194, 194);
     }
 }
 

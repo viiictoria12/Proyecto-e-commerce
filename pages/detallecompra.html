@@ -32,10 +32,10 @@
         </div>
     </header>
     <main>
-        <div class="menu-carrito">
-            <nav >
+        <div class="menu">
+            <nav class="menu__carrito">
                 <ul>
-                    <li class="menu__barra"><a href="./carrito.html">1. Mi carrito</a></li>
+                    <li class="menu__barra "><a href="./carrito.html">1. Mi carrito</a></li>
                 </ul>
                 <ul>
                     <li class="menu__barra menu__destacado"><a href="./detallecompra.html">2. Detalle de Compra</a></li>
@@ -46,7 +46,7 @@
             </nav>
         </div>
 
-        <h1 class="compra__title">Detalle de compra</h1>
+        <h1 class=" title title-cart">Detalle de compra</h1>
 
         <section class="detallecompra">
             <div class="detallecompra__nom-ape">
@@ -64,12 +64,20 @@
                 <input type="text" id="phone" name="phone" placeholder="Numero de telefono" required>
             </div>
             <div class="detallecompra__envio">
-                <label class="detallecompra__envio-check">
-                    <input type="checkbox" id="cbox1" value="first_checkbox" /> Envio a Domicilio 
-                </label><br/>
-                <label class="detallecompra__envio-check">
-                    <input type="checkbox" id="cbox2" value="first_checkbox" /> Retiro por sucursal
-                </label>
+                <div class="form-check tarjeta-check ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Envio a Domicilio 
+                    </label>
+                </div>
+                <div class="form-check tarjeta-check ">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                        checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Retiro por sucursal
+                    </label>
+                </div>
             </div>
         </section>  
         
@@ -83,7 +91,7 @@
         </section>
 
         <section class="product container">
-            <h2 class="title cart">Productos que podrian interesarte </h2>
+            <h2 class="title-cart">Productos que podrian interesarte </h2>
             <div class="product__carrusel">
                 <article class="product__card">
                     <img src="../img/topnegro.png" alt="">

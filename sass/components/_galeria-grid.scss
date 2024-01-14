@@ -1,3 +1,15 @@
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+
 /* ----- Galeria2 ----- */
 
 .galeria-2{
@@ -15,6 +27,14 @@
     .photo{
         background-position: center;
         background-size: cover;
+
+        @include mq-tablet(){
+            img{
+                width: 100%;
+                height:100% ;
+                object-fit: cover;
+            }
+        }
     }
 
     &__photo-destacada{
@@ -39,14 +59,7 @@
         z-index: 1;
     }
 
-}
-
-
-@media screen and (min-width:760px){
-
-    /* ---- Galeria2 -----*/
-    
-    .galeria-2{
+    @include mq-tablet(){
         display: grid;
         grid-template-columns: 2fr 1fr ;
         grid-template-rows: auto auto; 
@@ -80,13 +93,5 @@
             align-items: center;
         }
     }
-
-    .photo{
-        img{
-            width: 100%;
-            height:100% ;
-            object-fit: cover;
-        }
-    } 
 
 }

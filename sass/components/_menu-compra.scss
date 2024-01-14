@@ -1,24 +1,49 @@
-$color-menu:rgba(171, 131, 208, 0.153);
-$color-underline:rgb(167, 163, 163);
+$color-menu: rgba(171, 131, 208, 0.153);
+$color-underline: rgb(167, 163, 163);
+$font-title-principal:'DM Serif Display', serif;
 
-.menu-carrito{
-    display: flex;
-    justify-content: space-between;
+
+@mixin mq-tablet() {
+    @media screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop() {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+.menu {
     background-color: $color-menu;
-    padding: 2rem;
+    padding: 3rem;
     gap: 2rem;
 
-    .menu__barra{
-        font-size: 1.50rem;
+    &__carrito{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        @include mq-tablet(){
+            flex-direction: row;
+        }
     }
 
-    .menu__destacado{
+    &__barra {
+    font-size: 1.50rem;
+    font-family: $font-title-principal;
+    }
+
+    &__destacado {
         text-decoration: underline;
         color: $color-underline;
     }
-    .title{
-        .cart{
+
+    .title {
+        .cart {
             text-align: start;
         }
     }
 }
+

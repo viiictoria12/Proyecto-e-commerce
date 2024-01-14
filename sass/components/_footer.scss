@@ -1,5 +1,16 @@
 $main-color:rgba(171, 131, 208, 0.363);
 
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
 /* ---Footer--- */
 .footer {
     background-color: $main-color;
@@ -65,12 +76,7 @@ $main-color:rgba(171, 131, 208, 0.363);
         font-size: .75rem;
     }
 
-}
-
-/* ---Media para tablet--- */
-@media screen and (min-width:760px){
-    /* ---Footer--- */
-    .footer {
+    @include mq-tablet(){
         flex-direction: row;
         justify-content: space-between;
         padding: 2rem 8rem;
@@ -83,6 +89,7 @@ $main-color:rgba(171, 131, 208, 0.363);
             align-items: end;
         }
     }
+
 }
 
 

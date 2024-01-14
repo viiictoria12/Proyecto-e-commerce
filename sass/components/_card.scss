@@ -1,40 +1,54 @@
-$color-card:rgba(171, 131, 208, 0.363);
+$color-card: rgba(171, 131, 208, 0.363);
+
+@mixin mq-tablet {
+    @media screen and (min-width:760px) {
+        @content;
+    }
+}
+
+@mixin mq-desktop {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
 
 /* --Productos index-- */
-.product{
+.product {
     justify-content: center;
     align-items: center;
     gap: 5rem;
     padding: 1rem;
 
-    &__card-flex{
+    &__card-flex {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    
-    &__card{
-        border: 5px;
-        border-color: $color-card;
-        width: 150px;
-        background-color:  $color-card;
-    
-        flex-basis: 200px;   /*valor base */
-        flex-shrink: 0;      /*para que no se achique*/
-    }
 
-    &__info{
+    // &__card {
+    //     border: 5px;
+    //     border-color: $color-card;
+    //     width: 150px;
+    //     background-color: $color-card;
+
+    //     flex-basis: 200px;
+    //     /*valor base */
+    //     flex-shrink: 0;
+    //     /*para que no se achique*/
+    // }
+
+    &__info {
         padding: 1rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
 
-    &__title{
+    &__title {
         text-align: center;
     }
 
-    &__carrusel{
+    &__carrusel {
         display: flex;
         flex-direction: row;
         overflow: auto;
@@ -43,17 +57,30 @@ $color-card:rgba(171, 131, 208, 0.363);
         overflow: auto;
         padding-right: 1rem;
         padding-left: 1rem;
-    }
-    
 
-}
+        .product__card {
+            flex-basis: 200px;
+            &:hover{
+                border: solid 5px white;
+                border-color: $color-card;
+                background-color: $color-card;
+                flex-basis: 250px;
+            }
+            
 
-@media screen and (min-width:760px){
-    
-    /* ---Productos carrusel --- */
-    .product{
-        &__card{
-            flex-basis: 250px;   /*valor base */
+            
+            /*valor base */
+            flex-shrink: 0;
+            /*para que no se achique*/
         }
     }
+
+    @include mq-tablet() {
+        &__card {
+            flex-basis: 250px;
+            /*valor base */
+            flex-shrink: 0;
+        }
+    }
+
 }

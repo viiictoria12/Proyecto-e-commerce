@@ -1,4 +1,13 @@
-
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
 /* ---galeria1 con flex--- */
 .galeria{
     display: flex;
@@ -20,11 +29,8 @@
         padding: 1rem;
     
     } 
-}
 
-@media screen and (min-width:760px){
-    /* ---Galeria--- */
-    .galeria{
+    @include mq-tablet(){
         &__img{
             display: flex;
             flex-direction: row;
@@ -32,6 +38,5 @@
             align-items: center;
             gap: 50px;
         }
-        
     }
 }

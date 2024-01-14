@@ -21,7 +21,7 @@
         <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <a class="nav-link active button" aria-current="page" href="../index.html">Inicio</a>
-                <a class="nav-link button" href="./pages/categorias.html">Categorias</a>
+                <a class="nav-link button" href="./categorias.html">Categorias</a>
                 <a class="nav-link button" href="#footer">Contacto</a>
                 <div class="nav-link button-carrito">
                     <i class="bi-cart2"></i>
@@ -33,8 +33,8 @@
     </header>
     
     <main>
-        <div class="menu-carrito">
-            <nav >
+        <div class="menu">
+            <nav class="menu__carrito">
                 <ul>
                     <li class="menu__barra menu__destacado"><a href="./carrito.html">1. Mi carrito</a></li>
                 </ul>
@@ -69,7 +69,7 @@
                         <img src="../img/conjuntorosa.png" alt="">
                     </div>
                     <div class="galeria-carrito__nom-precio-cant">
-                        <h3 class="title-carrito">Nombre Producto</h3>
+                        <h3 class="galeria-carrito__title">Nombre Producto</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         <div class="galeria-carrito__precio-cant">
                             <h6>$800</h6>
@@ -83,7 +83,7 @@
                         <img src="../img/conjuntorosa.png" alt="">
                     </div>
                     <div class="galeria-carrito__nom-precio-cant">
-                        <h3 class="title-carrito">Nombre Producto</h3>
+                        <h3 class="galeria-carrito__title">Nombre Producto</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                         <div class="galeria-carrito__precio-cant">
                             <h6>$800</h6>
@@ -94,7 +94,7 @@
             </div>
 
             <section class="galeria-carrito__resumen-compra">
-                <div>
+                <div class="resumen-compra">
                     <h2>Resumen de compra</h2>
                     <hr>
                     <div class="resumen-compra__cup">
@@ -132,61 +132,65 @@
         </section>
 
         <section class="product container">
-            <h2 class="title cart">Productos que podrian interesarte </h2>
+
+            <h2 class="title-cart">Productos que podrian interesarte </h2>
+            
             <div class="product__carrusel">
                 <article class="product__card">
-                    <img src="../img/topnegro.png" alt="">
+                    <img src="../img/modelo4-topveige.avif" alt="">
                     <div class="product__info">
-                        <h3>Nombre Articulo</h3>
+                        <h3>Conjunto deportivo para mujer</h3>
                         <p>$100.000</p>
-                        <a class="button" href="">Comprar</a>
+                        <a class="button" href="./pages/carrito.html">Comprar</a>
                     </div>
                 </article>
 
                 <article class="product__card">
-                    <img src="../img/topnegro.png" alt="">
+                    <img src="../img/topnegro2.avif" alt="">
                     <div class="product__info">
                         <h3>Nombre Articulo</h3>
                         <p>$100.000</p>
-                        <a class="button" href="">Comprar</a>
+                        <a class="button" href="./pages/carrito.html">Comprar</a>
+                    </div>
+                </article>
+                <article class="product__card">
+                    <img src="../img/modelo-topveige.avif" alt="">
+                    <div class="product__info">
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="./pages/carrito.html">Comprar</a>
                     </div>
                 </article>
 
                 <article class="product__card">
-                    <img src="../img/topnegro.png" alt="">
+                    <img src="../img/conjuntonegro2.avif" alt="">
                     <div class="product__info"> 
                         <h3>Nombre Articulo</h3>
                         <p>$100.000</p>
-                        <a class="button" href="">Comprar</a>
+                        <a class="button" href="./pages/carrito.html">Comprar</a>
+                    </div>
+                </article>
+
+                
+
+                <article class="product__card">
+                    <img src="../img/remeramulticolor.avif" alt="">
+                    <div class="product__info">
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="./pages/carrito.html">Comprar</a>
                     </div>
                 </article>
 
                 <article class="product__card">
-                    <img src="../img/topnegro.png" alt="">
+                    <img src="../img/modelo-topnegro.avif" alt="">
                     <div class="product__info">
                         <h3>Nombre Articulo</h3>
                         <p>$100.000</p>
-                        <a class="button" href="">Comprar</a>
+                        <a class="button" href="./pages/carrito.html">Comprar</a>
                     </div>
                 </article>
-
-                <article class="product__card">
-                    <img src="../img/topnegro.png" alt="">
-                    <div class="product__info">
-                        <h3>Nombre Articulo</h3>
-                        <p>$100.000</p>
-                        <a class="button" href="">Comprar</a>
-                    </div>
-                </article>
-
-                <article class="product__card">
-                    <img src="../img/topnegro.png" alt="">
-                    <div class="product__info">
-                        <h3>Nombre Articulo</h3>
-                        <p>$100.000</p>
-                        <a class="button" href="">Comprar</a>
-                    </div>
-                </article>
+            </div> 
         </section>
 
     </main>

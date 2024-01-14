@@ -1,9 +1,30 @@
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
 
 /* --- Carrito --- */
 .galeria-carrito{
+
+    @include mq-tablet(){
+        max-width: 900px; 
+    }
+
     &__product{
         border: 3px solid white;
         padding: 1rem;
+
+        @include mq-tablet(){
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
 
     }
     &__info{
@@ -20,6 +41,11 @@
         flex-direction: column;
         padding: 0.5rem;
         align-items: center;
+
+        @include mq-tablet(){
+            display: flex;
+            flex-direction: column;
+        }
     }
     &__precio-cant{
         display: flex;
@@ -33,64 +59,39 @@
     }
 
     /* Resumen Compra */
-    &__resumen-compra{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        padding: 1rem;
-    }
-    &__resumen-compra{
-        &__cup,
-        &__total,
-        &__env,
-        &__serv,
-        &__sub{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-        }
-    }
     &__input{
         border: none;
     }
 
-}
-.title-cart{
-    text-align: start;
-}
-
-
-@media screen and (min-width:760px){
-
-    /* --- Carrito --- */
-    .galeria-carrito{
-
-        max-width: 900px; 
-
-        &__product{
-            display: flex;
-            flex-direction: row;
-            gap: 2rem;
-        }
-
+    @include mq-tablet(){
         &__img{
             display: flex;
             flex-direction: column;
-        }
-
-        &__nom-precio-cant{
-        display: flex;
-        flex-direction: column;
-        }  
+        } 
         
         &__resumen-compra{
             max-width: 900px;
         }
     }
-    
-    .title-carrito{
-        margin-top: 0px;
-    }
-
 }
+.resumen-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1rem;
+    &__cup,
+    &__total,
+    &__env,
+    &__serv,
+    &__sub{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+.title-cart{
+    text-align: start;
+    margin: 1.5rem;
+}
+

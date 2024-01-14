@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=EB+Garamond&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <meta class="description" content="Facilitamos el pago seguro y sin complicaciones. Completa tu compra rápidamente con múltiples opciones de pago. ¡Haz que tu experiencia de compra sea rápida y segura!">
-        <link rel="stylesheet" href="../styles/styles.css">    
-        <title>Opciones de pago</title>
-    </head>
-    <body>
-        <header class="navbar navbar-expand-lg bg-body-tertiary navbar-carrito">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=EB+Garamond&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta class="description"
+        content="Facilitamos el pago seguro y sin complicaciones. Completa tu compra rápidamente con múltiples opciones de pago. ¡Haz que tu experiencia de compra sea rápida y segura!">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Opciones de pago</title>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg bg-body-tertiary navbar-carrito">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-                </button>
+            </button>
             <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active button" aria-current="page" href="../index.html">Inicio</a>
@@ -29,13 +35,13 @@
                     </div>
                 </div>
             </nav>
-            </div>
-        </header>
+        </div>
+    </header>
     <main>
-        <div class="menu-carrito">
-            <nav >
+        <div class="menu">
+            <nav class="menu__carrito">
                 <ul>
-                    <li class="menu__barra "><a href="./carrito.html">1. Mi carrito</a></li>
+                    <li class="menu__barra"><a href="./carrito.html">1. Mi carrito</a></li>
                 </ul>
                 <ul>
                     <li class="menu__barra"><a href="./detallecompra.html">2. Detalle de Compra</a></li>
@@ -45,11 +51,112 @@
                 </ul>
             </nav>
         </div>
-        <section>
-            <article>
+        <h1 class=" title title-cart">Opciones de pago</h1>
+        <section class="pago">
+            <div class="pago__tarjeta">
+                <div class="pago__tarjeta-opcion">
+                    <div class="form-check tarjeta-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Tarjeta de credito
+                        </label>
+                    </div>
+                    <div class="tarjeta-input">
+                        <input class="tarjeta-input-destacado" type="number" name="num-tarjeta"
+                            placeholder="Numero de tarjeta">
+                        <div class="cod-venc">
+                            <input type="number" name="ven-tarjeta" placeholder="MM/VV">
+                            <input type="number" name="cod-tarjeta" placeholder="CVV">
+                        </div>
+                    </div>
+                    <input class="tarjeta-input-destacado" type="text" name="nom-tarjeta" placeholder="Titular tarjeta">
+                </div>
 
-            </article>
+                <div class="pago__tarjeta-opcion">
+                    <div class="form-check tarjeta-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                            checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Tarjeta de debito
+                        </label>
+                    </div>
+                    <div class="tarjeta-input">
+                        <input class="tarjeta-input-destacado" type="number" name="num-tarjeta"
+                            placeholder="Numero de tarjeta">
+                        <div class="cod-venc">
+                            <input type="number" name="ven-tarjeta" placeholder="MM/VV">
+                            <input type="number" name="cod-tarjeta" placeholder="CVV">
+                        </div>
+                    </div>
+                    <input class="tarjeta-input-destacado" type="text" name="nom-tarjeta" placeholder="Titular tarjeta">
+                </div>
+            </div>
         </section>
+
+        <section class="btn-next">
+            <div class="btn-next__sig">
+                <a class="button button-comprar" href="">Comprar</a>
+            </div>
+        </section>
+
+        <section class="product container">
+            <h2 class="title-cart">Productos que podrian interesarte </h2>
+            <div class="product__carrusel">
+                <article class="product__card">
+                    <img src="../img/topnegro.png" alt="">
+                    <div class="product__info">
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topnegro.png" alt="">
+                    <div class="product__info">
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topnegro.png" alt="">
+                    <div class="product__info"> 
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topnegro.png" alt="">
+                    <div class="product__info">
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topnegro.png" alt="">
+                    <div class="product__info">
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="">Comprar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topnegro.png" alt="">
+                    <div class="product__info">
+                        <h3>Nombre Articulo</h3>
+                        <p>$100.000</p>
+                        <a class="button" href="">Comprar</a>
+                    </div>
+                </article>
+        </section>
+
     </main>
 
     <footer class="footer" id="footer">
@@ -76,6 +183,9 @@
             <!-- <p class="copyright">© 2023 studios. All rights reserved.</p> -->
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
