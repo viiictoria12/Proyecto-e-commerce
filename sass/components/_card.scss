@@ -59,19 +59,15 @@ $color-card: rgba(171, 131, 208, 0.363);
         padding-left: 1rem;
 
         .product__card {
-            flex-basis: 200px;
+            flex-basis: 200px;            /*valor base */
+            flex-shrink: 0;             /*para que no se achique*/
+
             &:hover{
-                border: solid 5px white;
+                // transform: scale(1.2);
                 border-color: $color-card;
                 background-color: $color-card;
-                flex-basis: 250px;
             }
             
-
-            
-            /*valor base */
-            flex-shrink: 0;
-            /*para que no se achique*/
         }
     }
 

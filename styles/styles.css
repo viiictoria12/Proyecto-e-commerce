@@ -89,6 +89,9 @@ a {
   background-color: beige;
   padding: 10px 12px;
 }
+.button__carrusel:hover {
+  padding: 8px 10px;
+}
 .button-carrito {
   background-color: beige;
   padding: 8px 10px;
@@ -102,12 +105,12 @@ a {
 .button-destacado {
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: rgba(251, 191, 237, 0.5294117647);
+  background-color: rgba(117, 114, 117, 0.6);
   z-index: 2;
   position: absolute;
 }
 .button-destacado:hover {
-  background-color: #f8ddf2;
+  background-color: rgba(210, 180, 237, 0.769);
   padding: 15px 25px;
 }
 .button-comprar {
@@ -168,16 +171,12 @@ a {
   padding-left: 1rem;
 }
 .product__carrusel .product__card {
-  flex-basis: 200px;
-  /*valor base */
-  flex-shrink: 0;
-  /*para que no se achique*/
+  flex-basis: 200px; /*valor base */
+  flex-shrink: 0; /*para que no se achique*/
 }
 .product__carrusel .product__card:hover {
-  border: solid 5px white;
   border-color: rgba(171, 131, 208, 0.363);
   background-color: rgba(171, 131, 208, 0.363);
-  flex-basis: 250px;
 }
 @media screen and (min-width: 760px) {
   .product__card {
@@ -194,17 +193,38 @@ a {
   align-items: center;
   flex-direction: column;
 }
-.galeria__img {
-  width: 270px;
-  padding: 1rem;
-}
-.galeria__img img {
-  width: 350px;
-  height: 350px;
-}
 .galeria h2 {
   margin-top: 1.5rem;
+}
+.galeria-seccion1 {
+  display: flex;
+  flex-direction: row;
   padding: 1rem;
+  gap: 1rem;
+}
+.galeria-seccion2 {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  gap: 1rem;
+}
+@media screen and (min-width: 760px) {
+  .galeria-seccion2 {
+    padding: 0;
+  }
+}
+.galeria__img {
+  display: flex;
+  flex-direction: column;
+}
+.galeria__img img {
+  width: 300px;
+  height: 350px;
+}
+@media screen and (min-width: 760px) {
+  .galeria__img img {
+    width: 350px;
+  }
 }
 @media screen and (min-width: 760px) {
   .galeria__img {
@@ -212,7 +232,6 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
   }
 }
 
@@ -317,6 +336,56 @@ a {
 }
 .menu .title .cart {
   text-align: start;
+}
+
+.beneficio {
+  background-color: rgba(171, 131, 208, 0.363);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 760px) {
+  .beneficio {
+    flex-direction: row;
+  }
+}
+.beneficio__envio {
+  display: flex;
+  flex-direction: column;
+}
+.beneficio__envio .bi-truck {
+  text-align: center;
+  font-size: 50px;
+}
+.beneficio__retiro {
+  display: flex;
+  flex-direction: column;
+}
+.beneficio__retiro .bi-shop {
+  text-align: center;
+  font-size: 50px;
+}
+.beneficio__devolucion {
+  display: flex;
+  flex-direction: column;
+}
+.beneficio__devolucion .bi-box {
+  text-align: center;
+  font-size: 50px;
+}
+.beneficio-info2 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.596);
+}
+
+.title-beneficios {
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .portada {
