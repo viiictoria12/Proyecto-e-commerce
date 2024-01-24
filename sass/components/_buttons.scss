@@ -20,6 +20,14 @@ $color-button-galeria2:#75727599;
         padding: 10px 12px;
     }
 
+    &-header{
+        background-color: $color-button-nav ;
+        &:hover{
+            background-color: $color-buttongeneral;
+            padding: 8px 10px;
+        }
+    }
+
     &__carrusel{
         &:hover{
             padding: 8px 10px;
@@ -75,6 +83,7 @@ $color-button-galeria2:#75727599;
     justify-content: start;
     align-items: center;
     padding: 1rem;
+    padding-left: 2rem;
 
     &__sig{
         margin-right: 1rem;

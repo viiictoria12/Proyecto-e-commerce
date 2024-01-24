@@ -10,6 +10,9 @@
     }
 }
 
+$width-input: 100%;
+
+
 .pago {
     &__tarjeta {
         &-opcion {
@@ -32,6 +35,10 @@
                 }
                 input{
                     padding: 0.5rem;
+                    width: $width-input;
+                    @include mq-tablet(){
+                        
+                    }
                 }
 
                 &-destacado {

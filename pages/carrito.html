@@ -20,9 +20,9 @@
             </button>
         <nav class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-link active button" aria-current="page" href="../index.html">Inicio</a>
-                <a class="nav-link button" href="./categorias.html">Categorias</a>
-                <a class="nav-link button" href="#footer">Contacto</a>
+                <a class="nav-link active button button-header" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link button button-header" href="./categorias.html">Categorias</a>
+                <a class="nav-link button button-header" href="#footer">Contacto</a>
                 <div class="nav-link button-carrito">
                     <i class="bi-cart2"></i>
                     <a href="./pages/carrito.html">Carrito</a>
@@ -51,12 +51,40 @@
             <h2 class="title title-cart">Mi carrito</h2>
             <div class="galeria-carrito__info">
                 <section class="galeria-carrito__product photo">
-                    <div class="galeria-carrito__img">
-                        <img src="../img/conjuntorosa.png" alt="">
+                    <div class="galeria-carrito__img img-container">
+                        <img src="../img/modelo-topveige.avif" alt="">
                     </div>
                     <div class="galeria-carrito__nom-precio-cant">
-                        <h3 class="galeria-carrito__title">Nombre Producto</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <h3 class="galeria-carrito__title">Remera deportiva para mujer UPTOWN</h3>
+                        <p> Este conjunto no solo te brinda comodidad y ajuste perfecto, sino que también añade un toque de estilo vibrante y llamativo a tu rutina de entrenamiento.</p>
+                        <div class="galeria-carrito__precio-cant">
+                            <h6>$800</h6>
+                            <input class="galeria-carrito__input" type="text" placeholder="Cantidad" name="Cantidad" id="">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="galeria-carrito__product photo">
+                    <div class="galeria-carrito__img img-container">
+                        <img src="../img/remeranaranjadoble.avif" alt="">
+                    </div>
+                    <div class="galeria-carrito__nom-precio-cant">
+                        <h3 class="galeria-carrito__title">Remera para mujer training Classics naranja </h3>
+                        <p> Ya sea que estés corriendo al aire libre, practicando yoga o ejercitándote en el gimnasio, esta remera te acompaña con estilo y funcionalidad</p>
+                        <div class="galeria-carrito__precio-cant">
+                            <h6>$800</h6>
+                            <input class="galeria-carrito__input" type="text" placeholder="Cantidad" name="Cantidad" id="">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="galeria-carrito__product photo">
+                    <div class="galeria-carrito__img img-container">
+                        <img src="../img/conjuntomulticolor4.avif" alt="">
+                    </div>
+                    <div class="galeria-carrito__nom-precio-cant">
+                        <h3 class="galeria-carrito__title">Remera PUMA x THE RAGGED PRIEST para mujer</h3>
+                        <p>  Confeccionado con materiales de alta calidad, te garantiza un look moderno y cómodo para destacar en cada actividad. ¡Haz una declaración de moda mientras te mantienes en forma!</p>
                         <div class="galeria-carrito__precio-cant">
                             <h6>$800</h6>
                             <input class="galeria-carrito__input" type="text" placeholder="Cantidad" name="Cantidad" id="">
@@ -64,33 +92,6 @@
                     </div>
                 </section>
                 
-                <section class="galeria-carrito__product photo">
-                    <div class="galeria-carrito__img">
-                        <img src="../img/conjuntorosa.png" alt="">
-                    </div>
-                    <div class="galeria-carrito__nom-precio-cant">
-                        <h3 class="galeria-carrito__title">Nombre Producto</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="galeria-carrito__precio-cant">
-                            <h6>$800</h6>
-                            <input class="input" type="text" placeholder="Cantidad" name="Cantidad" id="">
-                        </div>
-                    </div>
-                </section>
-
-                <section class="galeria-carrito__product photo">
-                    <div class="galeria-carrito__img">
-                        <img src="../img/conjuntorosa.png" alt="">
-                    </div>
-                    <div class="galeria-carrito__nom-precio-cant">
-                        <h3 class="galeria-carrito__title">Nombre Producto</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <div class="galeria-carrito__precio-cant">
-                            <h6>$800</h6>
-                            <input class="input" type="text" placeholder="Cantidad" name="Cantidad" id="">
-                        </div>
-                    </div>
-                </section>
             </div>
 
             <section class="galeria-carrito__resumen-compra">
@@ -99,7 +100,7 @@
                     <hr>
                     <div class="resumen-compra__cup">
                         <h5>Cupon de descuento: </h5>
-                        <input class="input" type="text" placeholder="Codigo">
+                        <input class="galeria-carrito__input" type="text" placeholder="Codigo">
                     </div>
                     <hr>
                     <div class="resumen-compra__sub">
@@ -136,58 +137,94 @@
             <h2 class="title-cart">Productos que podrian interesarte </h2>
             
             <div class="product__carrusel">
+                
                 <article class="product__card">
-                    <img src="../img/modelo4-topveige.avif" alt="">
+                    <img src="../img/topnegro2.avif" alt="">
                     <div class="product__info">
-                        <h3>Conjunto deportivo para mujer</h3>
+                        <h5>Remera deportiva para mujer UPTOWN</h5>
                         <p>$100.000</p>
-                        <a class="button" href="./pages/carrito.html">Comprar</a>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
                     </div>
                 </article>
 
                 <article class="product__card">
-                    <img src="../img/topnegro2.avif" alt="">
-                    <div class="product__info">
-                        <h3>Nombre Articulo</h3>
-                        <p>$100.000</p>
-                        <a class="button" href="./pages/carrito.html">Comprar</a>
-                    </div>
-                </article>
-                <article class="product__card">
                     <img src="../img/modelo-topveige.avif" alt="">
                     <div class="product__info">
-                        <h3>Nombre Articulo</h3>
+                        <h5>Remera deportiva para mujer UPTOWN</h5>
                         <p>$100.000</p>
-                        <a class="button" href="./pages/carrito.html">Comprar</a>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
                     </div>
                 </article>
 
                 <article class="product__card">
                     <img src="../img/conjuntonegro2.avif" alt="">
                     <div class="product__info"> 
-                        <h3>Nombre Articulo</h3>
+                        <h5>Remera PUMA x THE RAGGED PRIEST para mujer</h5>
                         <p>$100.000</p>
-                        <a class="button" href="./pages/carrito.html">Comprar</a>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
                     </div>
                 </article>
-
-                
 
                 <article class="product__card">
                     <img src="../img/remeramulticolor.avif" alt="">
                     <div class="product__info">
-                        <h3>Nombre Articulo</h3>
+                        <h5>Remera PUMA x THE RAGGED PRIEST para mujer</h5>
                         <p>$100.000</p>
-                        <a class="button" href="./pages/carrito.html">Comprar</a>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
                     </div>
                 </article>
 
                 <article class="product__card">
-                    <img src="../img/modelo-topnegro.avif" alt="">
+                    <img src="../img/remeramujer.avif" alt="">
                     <div class="product__info">
-                        <h3>Nombre Articulo</h3>
+                        <h5>Remera para mujer training Classics negro</h5>
                         <p>$100.000</p>
-                        <a class="button" href="./pages/carrito.html">Comprar</a>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topcortogris.avif" alt="">
+                    <div class="product__info">
+                        <h5>Top corto gris con negro DARE TO para mujer</h5>
+                        <p>$100.000</p>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remeracortatirantes.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera corta de tirantes RUN ULTRAFORM </h5>
+                        <p>$100.000</p>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remerablanca.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera gráfica blanca PUMA x LIBERTY para mujer</h5>
+                        <p>$100.000</p>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/topcortonegro.avif" alt="">
+                    <div class="product__info">
+                        <h5>Top de training corto para mujer Studio Ultrabare</h5>
+                        <p>$100.000</p>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
+                    </div>
+                </article>
+
+                <article class="product__card">
+                    <img src="../img/remerarosa.avif" alt="">
+                    <div class="product__info">
+                        <h5>Remera gráfica rosa PUMA x LIBERTY para mujer</h5>
+                        <p>$100.000</p>
+                        <a class="button button__carrusel" href="./pages/carrito.html"><i class="bi bi-bag"></i>    Agregar</a>
                     </div>
                 </article>
             </div> 

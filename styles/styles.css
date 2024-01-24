@@ -89,6 +89,13 @@ a {
   background-color: beige;
   padding: 10px 12px;
 }
+.button-header {
+  background-color: beige;
+}
+.button-header:hover {
+  background-color: rgba(171, 131, 208, 0.546);
+  padding: 8px 10px;
+}
 .button__carrusel:hover {
   padding: 8px 10px;
 }
@@ -131,6 +138,7 @@ a {
   justify-content: start;
   align-items: center;
   padding: 1rem;
+  padding-left: 2rem;
 }
 .btn-next__sig {
   margin-right: 1rem;
@@ -165,7 +173,7 @@ a {
   flex-direction: row;
   overflow: auto;
   align-items: center;
-  gap: 20px;
+  gap: 0.3rem;
   overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -311,6 +319,11 @@ a {
   }
 }
 
+.title-galeria {
+  padding: 0px;
+  padding-top: 2rem;
+}
+
 .menu {
   background-color: rgba(171, 131, 208, 0.153);
   padding: 3rem;
@@ -438,6 +451,19 @@ a {
     max-width: 900px;
   }
 }
+.galeria-carrito .img-container {
+  overflow: visible;
+}
+.galeria-carrito__img img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+@media screen and (min-width: 760px) {
+  .galeria-carrito__img img {
+    width: 450px;
+  }
+}
 .galeria-carrito__product {
   border: 3px solid white;
   padding: 1rem;
@@ -474,7 +500,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 .galeria-carrito__title {
   margin-top: 1rem;
@@ -556,6 +582,7 @@ a {
 }
 .pago__tarjeta-opcion .tarjeta-input input {
   padding: 0.5rem;
+  width: 100%;
 }
 .pago__tarjeta-opcion .tarjeta-input-destacado {
   max-width: 100vh;
@@ -575,6 +602,9 @@ a {
   padding: 2rem;
   padding-top: 0px;
 }
+.detallecompra input {
+  border: solid 2px rgba(171, 131, 208, 0.363);
+}
 .detallecompra__nom-ape {
   display: flex;
   flex-direction: row;
@@ -587,8 +617,11 @@ a {
 .detallecompra__dire {
   display: flex;
   flex-direction: column;
-  width: 50vh;
+  width: 100%;
   gap: 0.2rem;
+}
+.detallecompra__dire input {
+  width: 100%;
 }
 .detallecompra__envio {
   display: flex;
@@ -602,7 +635,7 @@ a {
   background-color: white;
 }
 .detallecompra__phone input {
-  width: 50vh;
+  width: 100%;
 }
 @media screen and (min-width: 760px) {
   .detallecompra {
