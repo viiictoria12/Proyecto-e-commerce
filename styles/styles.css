@@ -87,11 +87,11 @@ a {
   /* botones de galeria-2 */
 }
 .button:hover {
-  background-color: beige;
+  background-color: white;
   padding: 10px 12px;
 }
 .button-header {
-  background-color: beige;
+  background-color: white;
 }
 .button-header:hover {
   background-color: rgba(171, 131, 208, 0.546);
@@ -101,7 +101,7 @@ a {
   padding: 8px 10px;
 }
 .button-carrito {
-  background-color: beige;
+  background-color: white;
   padding: 8px 10px;
   border-color: rgba(210, 180, 237, 0.769);
   border-radius: 5px;
