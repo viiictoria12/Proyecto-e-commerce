@@ -16,7 +16,7 @@ $main-color:rgba(171, 131, 208, 0.363);
     background-color: $main-color;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     color: black;
@@ -42,6 +42,11 @@ $main-color:rgba(171, 131, 208, 0.363);
                 }
             }
         }
+        @include mq-tablet(){
+            ul {
+                flex-direction: row;
+            }
+        }
     }
 
     &__contacto{
@@ -49,6 +54,9 @@ $main-color:rgba(171, 131, 208, 0.363);
         flex-direction: column;
         gap: 1rem;
         align-items: center;
+        @include mq-tablet(){
+            align-items: end;
+        }
     }
 
     &__icons {
@@ -80,14 +88,6 @@ $main-color:rgba(171, 131, 208, 0.363);
         flex-direction: row;
         justify-content: space-between;
         padding: 2rem 8rem;
-        &__menu{
-            ul {
-                flex-direction: row;
-            }
-        } 
-        &__contactos {
-            align-items: end;
-        }
     }
 
 }

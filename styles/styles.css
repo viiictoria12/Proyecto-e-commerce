@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -165,6 +166,11 @@ a {
   flex-direction: column;
   gap: 1rem;
 }
+.product__precio-color {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
 .product__title {
   text-align: center;
 }
@@ -179,8 +185,15 @@ a {
   padding-left: 1rem;
 }
 .product__carrusel .product__card {
-  flex-basis: 200px; /*valor base */
-  flex-shrink: 0; /*para que no se achique*/
+  flex-basis: 200px;
+  /*valor base */
+  flex-shrink: 0;
+  /*para que no se achique*/
+  margin-right: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .product__carrusel .product__card:hover {
   border-color: rgba(171, 131, 208, 0.363);
@@ -192,6 +205,27 @@ a {
     /*valor base */
     flex-shrink: 0;
   }
+}
+
+/* Estilos para los botones de navegación */
+.navigation-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.nav-button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.nav-button:hover {
+  background-color: #0056b3;
 }
 
 /* ---galeria1 con flex--- */
@@ -401,6 +435,41 @@ a {
   margin-bottom: 0;
 }
 
+/* Estilo para el contenedor de los círculos */
+.color-options-container {
+  display: flex; /* Utilizar Flexbox */
+}
+
+.color-option {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.color-option.color1 {
+  background-color: white;
+}
+.color-option.color1:hover {
+  border: solid 2px black;
+}
+
+.color-option.color2 {
+  background-color: rgb(247, 174, 186);
+}
+.color-option.color2:hover {
+  border: solid 2px black;
+}
+
+.color-option.color3 {
+  background-color: gray;
+}
+.color-option.color3:hover {
+  border: solid 2px black;
+}
+
 .portada {
   background-image: url(../img/portada2.jpg);
   height: 80vh;
@@ -559,7 +628,21 @@ a {
 }
 
 .title_categorias {
-  padding-top: 3rem;
+  padding-top: 1rem;
+}
+
+.beneficio-categoria {
+  margin-top: 2rem;
+}
+
+.portada-categorias {
+  background-color: rgba(171, 131, 208, 0.363);
+  height: 10vh;
+}
+@media screen and (min-width: 760px) {
+  .portada-categorias {
+    height: 15vh;
+  }
 }
 
 .pago__tarjeta-opcion {
@@ -570,6 +653,9 @@ a {
   display: flex;
   flex-direction: column;
 }
+.pago__tarjeta-opcion input {
+  border: solid 2px rgba(171, 131, 208, 0.363);
+}
 .pago__tarjeta-opcion .tarjeta-input {
   display: flex;
   flex-direction: column;
@@ -579,13 +665,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 0.3rem;
 }
 .pago__tarjeta-opcion .tarjeta-input input {
   padding: 0.5rem;
   width: 100%;
 }
 .pago__tarjeta-opcion .tarjeta-input-destacado {
-  max-width: 100vh;
+  width: 100%;
   margin-top: 1rem;
   gap: 1rem;
   padding: 0.8rem;
@@ -601,6 +688,10 @@ a {
   gap: 0.7rem;
   padding: 2rem;
   padding-top: 0px;
+  padding: 1rem;
+  margin: 1rem;
+  border: solid 5px white;
+  max-width: 120vh;
 }
 .detallecompra input {
   border: solid 2px rgba(171, 131, 208, 0.363);
@@ -628,9 +719,6 @@ a {
   flex-direction: row;
   gap: 1rem;
 }
-.detallecompra__envio .form-check {
-  border: solid 3px white;
-}
 .detallecompra__envio .form-check:hover {
   background-color: white;
 }
@@ -653,7 +741,7 @@ a {
   background-color: rgba(171, 131, 208, 0.363);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
   color: black;
@@ -677,11 +765,21 @@ a {
   color: black;
   font-size: 1rem;
 }
+@media screen and (min-width: 760px) {
+  .footer__menu ul {
+    flex-direction: row;
+  }
+}
 .footer__contacto {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
+}
+@media screen and (min-width: 760px) {
+  .footer__contacto {
+    align-items: end;
+  }
 }
 .footer__icons {
   display: flex;
@@ -708,12 +806,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem 8rem;
-  }
-  .footer__menu ul {
-    flex-direction: row;
-  }
-  .footer__contactos {
-    align-items: end;
   }
 }
 

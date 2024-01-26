@@ -1,4 +1,13 @@
-
+@mixin mq-tablet{
+    @media screen and (min-width:760px){
+        @content;
+    }
+}
+@mixin mq-desktop{
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
 .carousel{
     &-inner {
         width: 100%;
@@ -27,5 +36,18 @@
     }
 }
 .title_categorias{
-    padding-top: 3rem;
+    padding-top: 1rem;
+}
+
+.beneficio-categoria{
+    margin-top: 2rem;
+}
+$main-color:rgba(171, 131, 208, 0.363);
+
+.portada-categorias{
+    background-color: $main-color ;
+    height: 10vh;
+    @include mq-tablet(){
+        height: 15vh;
+    }
 }

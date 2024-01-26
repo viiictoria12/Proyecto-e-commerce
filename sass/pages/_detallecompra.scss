@@ -1,5 +1,5 @@
 $width-input: 100%;
-$main-color:rgba(171, 131, 208, 0.363);
+$main-color: rgba(171, 131, 208, 0.363);
 
 
 @mixin mq-tablet {
@@ -15,24 +15,31 @@ $main-color:rgba(171, 131, 208, 0.363);
 }
 
 .detallecompra {
-    input{
+    input {
         border: solid 2px $main-color;
     }
+
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
     padding: 2rem;
     padding-top: 0px;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid 5px white;
+    max-width: 120vh;
 
     &__nom-ape {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         gap: 1rem;
+
         input {
             width: $width-input;
         }
     }
+
     // &__email,
     // &__lugar{
     //     input {
@@ -45,6 +52,7 @@ $main-color:rgba(171, 131, 208, 0.363);
         flex-direction: column;
         width: $width-input;
         gap: 0.2rem;
+
         input {
             width: $width-input;
         }
@@ -56,7 +64,6 @@ $main-color:rgba(171, 131, 208, 0.363);
         gap: 1rem;
 
         .form-check {
-            border: solid 3px white;
 
             &:hover {
                 background-color: white;
